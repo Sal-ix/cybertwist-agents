@@ -9,7 +9,7 @@
     "url": "https://github.com/cyberesia/cybertwist-chat-agents.git"
   },
   "license": "MIT",
-  "author": "Cyberesia <i@cyberesia.com>",
+  "author": "Cyberesia / LobeHub",
   "type": "module",
   "scripts": {
     "awesome": "bun scripts/build.ts && bun scripts/updateAwesome.ts",
@@ -22,7 +22,7 @@
     "test": "bun scripts/test.ts"
   },
   "devDependencies": {
-    "@cyberesia/lint": "latest",
+    "@lobehub/lint": "latest",
     "@octokit/rest": "^20",
     "@types/fs-extra": "^11",
     "@types/lodash-es": "^4",
