@@ -7,5 +7,6 @@
     "description": "Helping you write better UX copy",
     "tags": ["User Experience", "Designer", "Documentation", "Writing", "Metaphor"],
     "avatar": "💬"
-  }
+   },
+  "schemaVersion": 1
 }

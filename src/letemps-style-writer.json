@@ -7,5 +7,6 @@
     "description": "Specializes in writing in the style of popular articles on LeTemps",
     "tags": ["LeTemps", "Writing", "Copywriting", ""],
     "avatar": "📕"
-  }
+   },
+  "schemaVersion": 1
 }

@@ -7,5 +7,6 @@
     "title": "Master of Naming",
     "description": "Provides concise and meaningful names for your artistic creations.",
     "tags": ["naming", "creative"]
-  }
+   },
+  "schemaVersion": 1
 }

@@ -7,5 +7,6 @@
     "title": "Master of Debating",
     "description": "Simulates people who enjoy debating and can express counterarguments to any user input",
     "tags": ["Writing", "Dialogue"]
-  }
+   },
+  "schemaVersion": 1
 }

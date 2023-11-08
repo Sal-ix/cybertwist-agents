@@ -7,5 +7,6 @@
     "title": "Name Master",
     "description": "Naming expert to help you create unique and meaningful names.",
     "tags": ["Naming", "Copywriting"]
-  }
+   },
+  "schemaVersion": 1
 }

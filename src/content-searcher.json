@@ -7,5 +7,6 @@
     "description": "An information organizer that helps you organize and summarize content, and manage assets",
     "tags": ["search engine", "internet", "information organization"],
     "avatar": "⚗"
-  }
+   },
+  "schemaVersion": 1
 }
