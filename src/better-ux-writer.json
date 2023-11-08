@@ -5,6 +5,7 @@
   "meta": {
     "title": "UX Writer",
     "description": "Helping you write better UX copy",
-    "tags": ["User Experience", "Designer", "Documentation", "Writing"]
+    "tags": ["User Experience", "Designer", "Documentation", "Writing"],
+    "avatar": "✍️"
   }
 }

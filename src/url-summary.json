@@ -5,6 +5,7 @@
   "meta": {
     "title": "Web Content Summarization Expert",
     "description": "Just enter a URL, and the assistant will help you read and summarize the content of that URL.",
-    "tags": ["web", "reading", "summarization", "online"]
+    "tags": ["web", "reading", "summarization", "online"],
+    "avatar": "⚗"
   }
 }
