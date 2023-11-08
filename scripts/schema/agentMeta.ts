@@ -10,7 +10,7 @@ export const metaDataSchema = z.object({
   title: z.string(),
 });
 
-const cybertwistAgentConfigSchema = z.object({
+const lobeAgentConfigSchema = z.object({
   compressThreshold: z.number().optional(),
   displayMode: z.union([z.literal('chat'), z.literal('docs')]).optional(),
   enableCompressThreshold: z.boolean().optional(),
@@ -25,11 +25,11 @@ const cybertwistAgentConfigSchema = z.object({
   systemRole: z.string(),
 });
 
-export type cyberTwistAgentConfig = z.infer<typeof cybertwistAgentConfigSchema>;
+export type LobeAgentConfig = z.infer<typeof lobeAgentConfigSchema>;
 
-export const cybertwistAgentSchema = z.object({
+export const lobeAgentSchema = z.object({
   author: z.string(),
-  config: cybertwistAgentConfigSchema,
+  config: lobeAgentConfigSchema,
   createAt: z.string(),
   examples: lLMChatsSchema.optional(),
   homepage: z.string(),
@@ -38,4 +38,4 @@ export const cybertwistAgentSchema = z.object({
   schemaVersion: z.number(),
 });
 
-export type cyberTwistAgent = z.infer<typeof cybertwistAgentSchema>;
+export type LobeAgent = z.infer<typeof lobeAgentSchema>;

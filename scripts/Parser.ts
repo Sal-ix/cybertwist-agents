@@ -2,7 +2,7 @@ import { readJSONSync } from 'fs-extra';
 import { resolve } from 'node:path';
 
 import { agentsDir, config } from './const';
-import { cyberTwistAgent } from './schema/agentMeta';
+import { LobeAgent } from './schema/agentMeta';
 
 export const Parser = {
   parseFile: (fileName: string) => {
@@ -14,7 +14,7 @@ export const Parser = {
 
     const filePath = resolve(agentsDir, fileName);
 
-    let agent: cyberTwistAgent = readJSONSync(filePath);
+    let agent: LobeAgent = readJSONSync(filePath);
 
     return { content: agent, id, locale };
   },

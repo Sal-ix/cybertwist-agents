@@ -50,7 +50,7 @@ const runUpdateAwesome = () => {
   const index = readJSONSync(indexPath);
   const indexCn = readJSONSync(indexCnPath);
   updateAwesome(readmePath, readme, index.agents);
-  updateAwesome(readmeCnPath, readmeCn, indexCn.agents, 'fr-CH');
+  updateAwesome(readmeCnPath, readmeCn, indexCn.agents, 'zh-CN');
 };
 
 runUpdateAwesome();

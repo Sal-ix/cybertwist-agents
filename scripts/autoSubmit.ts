@@ -15,8 +15,8 @@ const SUCCESS_LABEL = '✅ Auto Check Pass';
 const ERROR_LABEL = '🚨 Auto Check Fail';
 
 class AutoSubmit {
-  owner = 'cyberesia';
-  repo = 'cybertwist-chat-agents';
+  owner = 'lobehub';
+  repo = 'lobe-chat-agents';
   issueNumber = Number(process.env.ISSUE_NUMBER);
   private octokit: Octokit;
 
@@ -96,8 +96,8 @@ class AutoSubmit {
 
   gitCommit(filePath, agent, agentName) {
     execSync('git diff');
-    execSync('git config --global user.name "cyberbot"');
-    execSync('git config --global user.email "i@cyberesia.com"');
+    execSync('git config --global user.name "lobehubbot"');
+    execSync('git config --global user.email "i@lobehub.com"');
     execSync('git pull');
     execSync(`git checkout -b agent/${agentName}`);
     consola.info('Checkout branch');
@@ -117,7 +117,7 @@ class AutoSubmit {
     consola.info('Generate i18n file');
 
     // prettier
-    execSync(`echo "module.exports = require('@cyberesia/lint').prettier;" >> .prettierrc.cjs`);
+    execSync(`echo "module.exports = require('@lobehub/lint').prettier;" >> .prettierrc.cjs`);
     execSync('bun run prettier');
     consola.info('Prettier');
 

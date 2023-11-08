@@ -7,7 +7,7 @@ import { zodToJsonSchema } from 'zod-to-json-schema';
 
 import { Parser } from './Parser';
 import { agents, config, localesDir, meta, publicDir, schemasDir } from './const';
-import { CyberAgent, cyberAgentSchema } from './schema/agentMeta';
+import { LobeAgent, lobeAgentSchema } from './schema/agentMeta';
 import { checkDir, checkJSON, findDuplicates, getLocaleAgentFileName } from './utils';
 
 class Builder {
@@ -23,7 +23,7 @@ class Builder {
    * @param locale
    */
   private buildSingleLocaleAgents = (locale: string) => {
-    const agentIndex: CyberAgent[] = [];
+    const agentIndex: LobeAgent[] = [];
     for (const file of this.agents) {
       // if file is not json ,skip it
       if (!checkJSON(file)) continue;
@@ -32,7 +32,7 @@ class Builder {
       const localeFileName = getLocaleAgentFileName(id, locale);
 
       // find correct agent content
-      let agent: CyberAgent;
+      let agent: LobeAgent;
       if (defaultLocale === locale) {
         agent = content;
       } else {
@@ -75,8 +75,8 @@ class Builder {
     checkDir(schemasDir);
     checkDir(resolve(publicDir, 'schema'));
 
-    const schema = zodToJsonSchema(cyberAgentSchema);
-    const fileName = `cyberAgentSchema_v${meta.schemaVersion}.json`;
+    const schema = zodToJsonSchema(lobeAgentSchema);
+    const fileName = `lobeAgentSchema_v${meta.schemaVersion}.json`;
     writeJSONSync(resolve(schemasDir, fileName), schema);
     writeJSONSync(resolve(publicDir, 'schema', fileName), schema);
     consola.success(`build success`);

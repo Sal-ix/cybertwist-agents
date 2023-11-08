@@ -3,16 +3,16 @@ import dayjs from 'dayjs';
 import { kebabCase } from 'lodash-es';
 import { format } from 'prettier';
 import { remark } from 'remark';
-import pangu from 'remark-pangu'; 
+import pangu from 'remark-pangu';
 
 import { config, meta } from './const';
-import { cyberTwistAgent, cybertwistAgentSchema } from './schema/agentMeta';
+import { LobeAgent, lobeAgentSchema } from './schema/agentMeta';
 
 export const formatAndCheckSchema = (agent) => {
   if (!agent.schemaVersion) agent.schemaVersion = meta.schemaVersion;
   if (!agent.createAt) agent.createAt = dayjs().format('YYYY-MM-DD');
 
-  const result = cybertwistAgentSchema.safeParse(agent);
+  const result = lobeAgentSchema.safeParse(agent);
 
   if (result.success) {
     consola.success(`schema check pass`);
@@ -24,12 +24,12 @@ export const formatAndCheckSchema = (agent) => {
 };
 
 export const formatPrompt = async (prompt: string, locale: string) => {
-  return locale === 'fr-CH'
+  return locale === 'zh-CN'
     ? String(await remark().use(pangu).process(prompt))
     : String(await remark().process(prompt));
 };
 
-export const formatAgentJSON = async (agent: cyberTwistAgent, locale: string = config.entryLocale) => {
+export const formatAgentJSON = async (agent: LobeAgent, locale: string = config.entryLocale) => {
   formatAndCheckSchema(agent);
   agent.config.systemRole = await formatPrompt(agent.config.systemRole, locale);
 
