@@ -24,7 +24,7 @@ export const formatAndCheckSchema = (agent) => {
 };
 
 export const formatPrompt = async (prompt: string, locale: string) => {
-  return locale === 'zh-CN'
+  return locale === 'fr-CH'
     ? String(await remark().use(pangu).process(prompt))
     : String(await remark().process(prompt));
 };

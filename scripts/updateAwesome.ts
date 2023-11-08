@@ -2,7 +2,7 @@ import { readJSONSync } from 'fs-extra';
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
-import { indexCnPath, indexPath, publicDir, readmeCnPath, readmePath } from './const';
+import { indexChPath, indexPath, publicDir, readmeChPath, readmePath } from './const';
 import { updateAwesomeReadme } from './utils';
 
 const updateAwesome = (filePath: string, md: string, agents, locale?: string) => {
@@ -45,12 +45,12 @@ const updateAwesome = (filePath: string, md: string, agents, locale?: string) =>
 };
 
 const runUpdateAwesome = () => {
-  const readmeCn = readFileSync(readmeCnPath, 'utf-8');
+  const readmeCh = readFileSync(readmeChPath, 'utf-8');
   const readme = readFileSync(readmePath, 'utf-8');
   const index = readJSONSync(indexPath);
-  const indexCn = readJSONSync(indexCnPath);
+  const indexCh = readJSONSync(indexChPath);
   updateAwesome(readmePath, readme, index.agents);
-  updateAwesome(readmeCnPath, readmeCn, indexCn.agents, 'zh-CN');
+  updateAwesome(readmeChPath, readmeCh, indexCh.agents, 'fr-CH');
 };
 
 runUpdateAwesome();

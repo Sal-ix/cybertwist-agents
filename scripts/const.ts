@@ -20,11 +20,11 @@ export const templateFullPath = resolve(root, 'agent-template-full.json');
 
 export const indexPath = resolve(publicDir, 'index.json');
 
-export const indexCnPath = resolve(publicDir, 'index.zh-CN.json');
+export const indexChPath = resolve(publicDir, 'index.fr-CH.json');
 
 export const readmePath = resolve(root, 'README.md');
 
-export const readmeCnPath = resolve(root, 'README.zh-CN.md');
+export const readmeChPath = resolve(root, 'README.fr-CH.md');
 
 export const metaPath = resolve(root, 'meta.json');
 export const meta = readJSONSync(metaPath);
