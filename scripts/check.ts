@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { kebabCase } from 'lodash-es';
 import { format } from 'prettier';
 import { remark } from 'remark';
-import pangu from 'remark-pangu';
+import pangu from 'remark-pangu'; 
 
 import { config, meta } from './const';
 import { cyberTwistAgent, cybertwistAgentSchema } from './schema/agentMeta';
