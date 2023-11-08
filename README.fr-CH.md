@@ -10,7 +10,7 @@
 
 [cybertwist Chat](https://github.com/cyberesia/cybertwist-chat) accesses [`index.json`][website-url] from this repo to show user the list of available agents for cyberTwistChat.
 
-**English** · [简体中文](./README.fr-CH.md)
+**English** · [Français](./README.fr-CH.md)
 
 <!-- SHIELD GROUP -->
 
@@ -23,7 +23,7 @@
 [![][github-stars-shield]][github-stars-link]
 [![][github-issues-shield]][github-issues-link]
 
-[![](https://github-production-user-asset-6210df.s3.amazonaws.com/17870709/268670869-f1ffbf66-42b6-42cf-a937-9ce1f8328514.png)](https://github.com/cyberesia/cybertwist-chat)
+[![](https://twist.cyberesia.com/banner_market_modal.webp)](https://twist.cyberesia.com)
 
 </div>
 
