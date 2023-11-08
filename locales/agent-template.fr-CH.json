@@ -1,0 +1,15 @@
+{
+  "author": "your name or org name",
+  "config": {
+    "systemRole": "agent prompt"
+  },
+  "homepage": "https://github.com/OWNER/REPO",
+  "identifier": "agent-template # same as your filename",
+  "locale": "en-US # you can set locale if you use other i18n language, default is fr-CH",
+  "meta": {
+    "avatar": "🌪️ emoji or logo url",
+    "tags": ["tag1", "tag2"],
+    "title": "titre de l'agent fr-CH # la génération i18n sera automatique dans le workflow",
+    "description": "description de l'agent fr-CH # la génération i18n sera automatique dans le workflow"
+  }  
+}

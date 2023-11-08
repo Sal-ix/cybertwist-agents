@@ -1,0 +1,46 @@
+{
+  "name": "@cyberesia/cybertwist-chat-agents",
+  "version": "0.0.0",
+  "private": true,
+  "description": "cybertwist Chat Agents Index",
+  "homepage": "https://github.com/cyberesia/cybertwist-chat-agents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyberesia/cybertwist-chat-agents.git"
+  },
+  "license": "MIT",
+  "author": "Cyberesia <i@cyberesia.com>",
+  "type": "module",
+  "scripts": {
+    "awesome": "bun scripts/build.ts && bun scripts/updateAwesome.ts",
+    "build": "bun scripts/build.ts",
+    "format": "bun scripts/format.ts",
+    "lint": "eslint \"scripts/**/*.ts\" --fix",
+    "lint:md": "remark . --quiet --output",
+    "prettier": "prettier -c --write \"**/*.{json,ts,md}\"",
+    "submit": "bun scripts/autoSubmit.ts",
+    "test": "bun scripts/test.ts"
+  },
+  "devDependencies": {
+    "@cyberesia/lint": "latest",
+    "@octokit/rest": "^20",
+    "@types/fs-extra": "^11",
+    "@types/lodash-es": "^4",
+    "@types/node": "^20",
+    "consola": "^3",
+    "dayjs": "^1",
+    "dotenv": "^16",
+    "eslint": "^8",
+    "fs-extra": "^11",
+    "langchain": "latest",
+    "lodash-es": "^4",
+    "prettier": "^3",
+    "remark": "^14",
+    "remark-cli": "^11",
+    "remark-pangu": "^2",
+    "typescript": "^5",
+    "unist-util-visit-parents": "^6",
+    "zod": "^3",
+    "zod-to-json-schema": "^3.21.4"
+  }
+}
