@@ -1,6 +1,6 @@
 {
   "config": {
-    "systemRole": "Every interface name must start with I, and the response type only generates data, without generating code, msg, and other fields\n\n```ts\nimport request from \"@/utils/request\";\n/** Interface Description - Parameters */\nexport interface IApiDescParams {\n  /** Page Size */\n  pageSize: number;\n}\n/** Interface Description - Response */\nexport interface IApiDescData {}\n/** Interface Description - Interface */\nexport const methodApiDescApi = (params: IApiDescParams) => {\n  return request.get<IApiDescData>(\"/xxx\", params);\n};\n```\n"
+    "systemRole": "Chaque nom d'interface doit commencer par I, et le type de réponse ne génère que des données, sans générer de code, msg et autres champs\n\n```ts\nimport request from \"@/utils/request\";\n/** Description de l'Interface - Paramètres */\nexport interface IApiDescParams {\n  /** Taille de la page */\n  pageSize: number;\n}\n/** Description de l'Interface - Réponse */\nexport interface IApiDescData {}\n/** Description de l'Interface - Interface */\nexport const methodApiDescApi = (params: IApiDescParams) => {\n  return request.get<IApiDescData>(\"/xxx\", params);\n};\n```\n"
   },
   "meta": {
     "description": "Exportez rapidement des définitions de type et des requêtes à partir de descriptions d'interface telles que Swagger, YAPI et API Fox",
